@@ -4,6 +4,9 @@
 # 🌍 Europe Power Generation Analysis  
 ### Exploratory Data Analysis & Solar Power Time Series Forecasting
 
+<img width="2000" height="500" alt="SolarPowerPrediction" src="https://github.com/user-attachments/assets/9765a142-084b-4be6-950f-78d58f7088ed" />
+
+
 This project presents a comprehensive **exploratory data analysis (EDA)** and **time series forecasting** of European power generation data, with a focused deep dive into **solar power generation patterns**.  
 The analysis combines data science, visualization, and forecasting techniques to better understand the **energy mix in Europe** and to predict future solar power generation trends.
 
