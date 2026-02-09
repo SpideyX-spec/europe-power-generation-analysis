@@ -127,7 +127,7 @@ europe-power-generation-analysis/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/europe-power-generation-analysis.git
+  (https://github.com/SpideyX-spec/Solar-Energy-Time-Series-Analysis.git)
 ````
 
 2. Install dependencies:
