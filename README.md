@@ -1,15 +1,15 @@
 
 
 
-# 🌍 Europe Power Generation Analysis  
+# ☀️ Solar Power Forecasting & Grid Stability Analysis (PJM)
 ### Exploratory Data Analysis & Solar Power Time Series Forecasting
 
 <img width="2000" height="500" alt="SolarPowerPrediction" src="https://github.com/user-attachments/assets/9765a142-084b-4be6-950f-78d58f7088ed" />
 
 
-This project presents a comprehensive **exploratory data analysis (EDA)** and **time series forecasting** of European power generation data, with a focused deep dive into **solar power generation patterns**.  
-The analysis combines data science, visualization, and forecasting techniques to better understand the **energy mix in Europe** and to predict future solar power generation trends.
+This project presents a research-grade Machine Learning framework to forecast solar power generation within the PJM Interconnection (the largest electrical grid operator in the Eastern United States).
 
+Unlike traditional linear forecasting, this approach utilizes Gradient Boosting (XGBoost) combined with Cyclic Temporal Feature Engineering to accurately model the non-linear and stochastic nature of solar energy. The goal is to provide accurate short-term forecasts to assist in grid stability and load balancing.
 ---
 
 ## 📊 Project Objectives
@@ -24,7 +24,7 @@ The analysis combines data science, visualization, and forecasting techniques to
 
 ## 🗂️ Dataset Overview
 
-The dataset consists of **multiple CSV files** containing hourly power generation data across Europe.
+The dataset comprises hourly power generation records from the PJM Interconnection, covering 13 states in the Eastern US.
 
 ### Key Features:
 - **Timestamp** (UTC & local time)
@@ -88,12 +88,13 @@ Facebook Prophet was used to model solar power generation:
 
 ## 🧠 Key Findings
 
-- Europe’s energy mix is still dominated by **non-renewable sources**
-- **Solar power shows strong daily and seasonal patterns**
-- Time series forecasting can effectively predict solar generation
-- Accurate solar forecasts are crucial for **grid stability and energy planning**
+The PJM Grid is heavily reliant on Nuclear and Gas for baseload stability.
 
----
+Solar Energy follows a strict diurnal pattern but suffers from high variance due to cloud cover.
+
+Feature Importance: The "Lag_24h" (yesterday's generation) and "Hour_Sin" (time of day) were the strongest predictors of future generation.
+
+XGBoost successfully captured the rapid ramp-up and ramp-down of solar curves better than linear models.
 
 ## 🛠️ Technologies & Tools Used
 
